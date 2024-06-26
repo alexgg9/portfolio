@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  body.dark-mode {
+    background-color: #111827;
+    color: #ffffff;
+  }
+  
+
+  .card,
+  .proyect-card {
+    background-color: #ffffff;
+    color: #000000;
+
+  }
+
+  body.dark-mode .experience-card,
+  body.dark-mode .proyect-card {
+    background-color: #4b5563;
+    color: #ffffff;
+  }
+  
+
+  .card .icon,
+  .proyect-card .icon {
+    background-color: #edf2f7;
+  }
+
+  body.dark-mode .experience-card .icon,
+  body.dark-mode .proyect-card .icon {
+    background-color: #9ca3af;
+  }
+  
+
+  body.dark-mode .experience-card .icon i,
+  body.dark-mode .proyect-card .icon i {
+    color: #ffffff;
+  }
+  
+
+  .experience-card h2,
+  .proyect-card h2,
+  .experience-card p,
+  .proyect-card p {
+    color: #2d3748;
+  }
+  
+
+  body.dark-mode .experience-card h2,
+  body.dark-mode .experience-card h3,
+  body.dark-mode .proyect-card h2,
+  body.dark-mode .experience-card p,
+  body.dark-mode .proyect-card p {
+    color: #ffffff;
+  }
+
+  body.dark-mode .experience-card time {
+    color: #ffffff !important;
+  }
+

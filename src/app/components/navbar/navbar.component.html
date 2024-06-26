@@ -1,0 +1,29 @@
+<nav class="navbar bg-gray-500 bg-opacity-95 fixed top-0 left-1/2 transform -translate-x-1/2 w-auto p-2 rounded-full mt-4 shadow-lg z-50">
+  <div class="flex items-center justify-center h-10">
+    <div class="ml-4 flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
+      
+      <a href="#inicio" class="nav-link text-white hover:text-gray-300 flex items-center px-3 py-2 rounded-md text-md font-medium">
+        Inicio
+      </a>
+      <a href="#sobre-mi" class="nav-link text-white hover:text-gray-300 flex items-center px-3 py-2 rounded-md text-md font-medium">
+        Sobre Mí
+      </a>
+      <a href="#tecnologias" class="nav-link text-white hover:text-gray-300 flex items-center px-3 py-2 rounded-md text-md font-medium">
+        Tecnologías
+      </a>
+      <a href="#proyectos" class="nav-link text-white hover:text-gray-300 flex items-center px-3 py-2 rounded-md text-md font-medium">
+        Proyectos
+      </a>
+      <a href="#experiencia" class="nav-link text-white hover:text-gray-300 flex items-center px-3 py-2 rounded-md text-md font-medium">
+        Experiencia
+      </a>
+
+      
+      <div class="dropdown">
+        <button (click)="toggleDarkMode()" class="text-white hover:text-gray-300 flex items-center px-4 py-2 rounded-md text-md font-medium focus:outline-none">
+          <i class="fas" [ngClass]="{'fa-moon': !isDarkMode, 'fa-sun text-yellow-300': isDarkMode}"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
