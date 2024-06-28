@@ -1,7 +1,7 @@
 # Portfolio | Alejandro Gálvez
 
 
-![Portfolio Screenshot]((https://github.com/alexgg9/portfolio/issues/1#issue-2380159579))
+![portfolio](https://github.com/alexgg9/portfolio/assets/44396199/4946da44-4a9f-4d23-bdb3-c20e90944dcd)
 
 
 ## Descripción
