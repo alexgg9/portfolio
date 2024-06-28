@@ -1,18 +1,30 @@
-<app-navbar></app-navbar>
-<div id="inicio">
-<app-banner></app-banner>
-</div>
-<div id="sobre-mi">
-  <app-about></app-about>
-</div>
-<div id="tecnologias">
+<body class="overflow-x-hidden">
+  <app-navbar></app-navbar>
+
+  <div id="inicio">
+    <app-banner></app-banner>
+  </div>
+
+  <div id="sobre-mi">
+    <app-about></app-about>
+  </div>
+
+  <div id="tecnologias">
     <app-technologies></app-technologies>
   </div>
-<div id="proyectos">
-  <app-proyects></app-proyects>
-</div>
-<div id="experiencia">
-  <app-experience></app-experience>
-</div>
 
-<router-outlet></router-outlet>
+  <div id="experiencia" >
+    <app-experience></app-experience>
+  </div>
+
+  <div id="proyectos">
+    <app-proyects></app-proyects>
+  </div>
+
+
+  <div>
+    <app-footer></app-footer>
+  </div>
+
+  <router-outlet></router-outlet>
+</body>

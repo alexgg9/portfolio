@@ -1,38 +1,40 @@
 <nav class="navbar bg-gray-500 bg-opacity-95 fixed top-0 left-1/2 transform -translate-x-1/2 w-auto p-2 rounded-full mt-4 shadow-lg z-50">
   <div class="max-w-screen-lg mx-auto px-4 flex items-center justify-between h-12">
-
-    
+    <div class="glider"></div>
     <div class="flex items-center justify-between w-full md:w-auto">
       <div class="flex items-center space-x-4 md:space-x-8">
-        <a href="#inicio" class="nav-link text-white hover:text-gray-300 flex items-center px-3 py-2 rounded-md text-md font-medium">
+        <a href="#inicio" class="nav-link text-white hover:text-gray-300 flex items-center px-3 py-2 rounded-md text-md font-medium"
+          (click)="setActiveSection('inicio')" [ngClass]="{'active': sections[0].isActive}">
           <span class="hidden md:inline">Inicio</span>
           <span class="md:hidden"><i class="fas fa-home"></i></span>
         </a>
-        <a href="#sobre-mi" class="nav-link text-white hover:text-gray-300 flex items-center px-3 py-2 rounded-md text-md font-medium">
+        <a href="#sobre-mi" class="nav-link text-white hover:text-gray-300 flex items-center px-3 py-2 rounded-md text-md font-medium"
+          (click)="setActiveSection('sobre-mi')" [ngClass]="{'active': sections[1].isActive}">
           <span class="hidden md:inline">Sobre Mí</span>
           <span class="md:hidden"><i class="fas fa-user"></i></span>
         </a>
-        <a href="#tecnologias" class="nav-link text-white hover:text-gray-300 flex items-center px-3 py-2 rounded-md text-md font-medium">
+        <a href="#tecnologias" class="nav-link text-white hover:text-gray-300 flex items-center px-3 py-2 rounded-md text-md font-medium"
+          (click)="setActiveSection('tecnologias')" [ngClass]="{'active': sections[2].isActive}">
           <span class="hidden md:inline">Tecnologías</span>
           <span class="md:hidden"><i class="fas fa-laptop-code"></i></span>
         </a>
-        <a href="#proyectos" class="nav-link text-white hover:text-gray-300 flex items-center px-3 py-2 rounded-md text-md font-medium">
-          <span class="hidden md:inline">Proyectos</span>
-          <span class="md:hidden"><i class="fas fa-project-diagram"></i></span>
-        </a>
-        <a href="#experiencia" class="nav-link text-white hover:text-gray-300 flex items-center px-3 py-2 rounded-md text-md font-medium">
+        <a href="#experiencia" class="nav-link text-white hover:text-gray-300 flex items-center px-3 py-2 rounded-md text-md font-medium"
+          (click)="setActiveSection('experiencia')" [ngClass]="{'active': sections[3].isActive}">
           <span class="hidden md:inline">Experiencia</span>
           <span class="md:hidden"><i class="fas fa-briefcase"></i></span>
         </a>
+        <a href="#proyectos" class="nav-link text-white hover:text-gray-300 flex items-center px-3 py-2 rounded-md text-md font-medium"
+          (click)="setActiveSection('proyectos')" [ngClass]="{'active': sections[4].isActive}">
+          <span class="hidden md:inline">Proyectos</span>
+          <span class="md:hidden"><i class="fas fa-project-diagram"></i></span>
+        </a>
       </div>
 
-    
       <div class="ml-4 md:ml-0">
         <button (click)="toggleDarkMode()" class="text-white hover:text-gray-300 flex items-center px-4 py-2 rounded-md text-md font-medium focus:outline-none">
           <i class="fas" [ngClass]="{'fa-moon': !isDarkMode, 'fa-sun text-yellow-300': isDarkMode}"></i>
         </button>
       </div>
     </div>
-
   </div>
 </nav>

@@ -7,12 +7,13 @@ import { AboutComponent } from './components/about/about.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, TechnologiesComponent, NavbarComponent, AboutComponent, ProyectsComponent, BannerComponent, ExperienceComponent],
+  imports: [CommonModule, RouterOutlet, TechnologiesComponent, NavbarComponent, AboutComponent, ProyectsComponent, BannerComponent, ExperienceComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
