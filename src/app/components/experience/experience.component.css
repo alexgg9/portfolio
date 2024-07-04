@@ -1,0 +1,25 @@
+.adjusted-list {
+    padding-left: 0; 
+    list-style-position: inside; 
+  }
+  
+  .adjusted-list li {
+    display: flex;
+    align-items: baseline; 
+    text-align: justify; 
+  }
+  
+  .adjusted-list li::before {
+    content: "•"; 
+    display: inline-block; 
+    width: 1em; 
+    margin-right: 0.5em; 
+    flex-shrink: 0; 
+  }
+  
+  .adjusted-list li p {
+    flex: 1; 
+  }
+  
+
+  
