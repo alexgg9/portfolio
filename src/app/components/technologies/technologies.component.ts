@@ -15,14 +15,14 @@ export class TechnologiesComponent {
     { name: 'Angular', icon: 'assets/icons/angular.svg' },
     { name: 'Java', icon: 'assets/icons/java.svg' },
     { name: 'Spring', icon: 'assets/icons/spring.svg' },
+    { name: 'Laravel', icon: 'assets/icons/laravel.svg' },
     { name: 'Ionic', icon: 'assets/icons/ionic.svg' },
     { name: 'React', icon: 'assets/icons/react.svg'},
+    { name: 'PHP', icon: 'assets/icons/php.svg' },
     { name: 'Android', icon: 'assets/icons/android.svg' },
     { name: 'MySQL', icon: 'assets/icons/mysql.svg' },
     { name: 'PostgreSQL', icon: 'assets/icons/postgresql.svg' },
-    { name: 'Bootstrap', icon: 'assets/icons/bootstrap.svg' },
     { name: 'Git', icon: 'assets/icons/git.svg' },
-    {name: 'Postman', icon: 'assets/icons/postman.svg'},
   ];
 
 }
